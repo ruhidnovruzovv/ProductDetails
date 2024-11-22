@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+
+body {
+    background-image: url(/assets/images/bg.jpg);
+    width: 100%;
+    height: 100vh;
+}
+
+.nav {
+    background-color: #ffffffb8;
+}
+
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    /* Space between cards */
+    margin-top: 50px;
+}
+
+.card {
+    background-color: #ffffffb8;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    width: 300px;
+    padding: 25px;
+    position: relative;
+    cursor: pointer;
+}
+
+.card .fav {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.card .fav:hover {
+    color: rgb(236, 153, 0);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.card .price {
+    font-size: 1.2rem;
+    color: #e91e63;
+    margin: 0;
+}
+
+.card .rating {
+    font-size: 1rem;
+    color: #777;
+    margin: 0;
+}
+.ratingCount{
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.buy{
+    background-color: rgb(52, 52, 255);
+    border: none;
+    color: white;
+    padding: 5px 0;
+    border-radius: 8px;
+
+}
+
+
+
+.favv {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.favv:hover {
+    color: rgb(236, 153, 0);
+
+}
+i.basket {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}

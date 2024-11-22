@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+    integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/details.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Product details</h1>
+
+    <div class="container">
+        <div class="img">
+            <img src="" alt="">
+        </div>
+        <div class="details">
+            <h5 id="title"></h5>
+            <i class="fa-regular fa-heart favv" style="font-size: 20px; margin: 10px;"></i>
+
+            <p class="category">Category: <span id="category"></span></p>
+            <p id="price"></p>
+            <p id="description"></p>
+            <div class="count">
+                <button id="minus">-</button>
+                <input type="numeber" id="count">
+                <button id="plus">+</button>
+            </div>
+            <p>Rate: <span id="rate"></span> ~ <span id="reviews"></span> (Reviews)</p>
+            <button id="add">Add to cart</button>
+        </div>
+    </div>
+
+    <script src="assets/js/details.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+
+</html>

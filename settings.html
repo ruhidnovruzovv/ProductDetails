@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hesab Parametrləri</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/settings.css">
+</head>
+
+<body>
+    <div class="container form-container">
+        <h2 class="text-center">Hesab Parametrləri</h2>
+        <form id="settingsForm">
+            <div class="mb-3">
+                <label for="name" class="form-label">Ad</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="surname" class="form-label">Soyad</label>
+                <input type="text" class="form-control" id="surname" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-control" id="username" required>
+            </div>
+            <div class="mb-3">
+                <label for="currentPassword" class="form-label">Cari Şifrə</label>
+                <input type="password" class="form-control" id="currentPassword" required>
+            </div>
+            <div class="mb-3">
+                <label for="newPassword" class="form-label">Yeni Şifrə</label>
+                <input type="password" class="form-control" id="newPassword">
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Məlumatları Yenilə</button>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="assets/js/settings.js"></script>
+</body>
+
+</html>

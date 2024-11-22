@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+    integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Home</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light nav">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="https://www.aztu.edu.az/sub_site/assets/dist/img/logo-footerr.png"
+          alt="" style="height: 50px;"></a>
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+      </ul>
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="authDropdown">
+          Daxil ol
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="authDropdown">
+          <li><a class="dropdown-item" href="login.html">Login</a></li>
+          <li><a class="dropdown-item" href="register.html">Register</a></li>
+        </ul>
+      </div>
+
+      <div id="userInfo" class="d-none">
+        <span id="userName"></span>
+        <a href="settings.html" style="text-decoration: none; color:black; margin-left: 5px; ">Ayarlar ></a>
+        <button id="logout" class="btn btn-danger btn-sm ms-2">Logout</button>
+      </div>
+      <i class="fa-regular fa-heart favv" style="font-size: 20px; margin: 10px;"></i>
+      <i class="fa-solid fa-basket-shopping basket" style="font-size: 20px;"></i>
+      <sup id="count" style="margin-left: 2px;">0</sup>
+    </div>
+  </nav>
+
+  <div class="card-container">
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+</body>
+
+</html>

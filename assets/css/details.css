@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: url(/assets/images/bg.jpg);
+    width: 100%;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    padding: 40px;
+    width: 100%;
+    background: #ffffff4d;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    overflow: hidden;
+    height: 500px;
+}
+
+.img {
+    width: 400px;
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img img {
+    width: 100%;
+    height: 70%;
+    border-radius: 8px;
+}
+
+.details {
+    flex: 2;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.details h5 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.details p {
+    font-size: 1rem;
+    margin: 8px 0;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+.details #price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+.category {
+    color: white;
+}
+
+.count {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.count button {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.count button:hover {
+    background-color: #2980b9;
+}
+
+.count input {
+    width: 60px;
+    height: 40px;
+    margin: 0 10px;
+    text-align: center;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.details span {
+    font-weight: bold;
+}
+
+#add {
+    border: none;
+    border-radius: 30px;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    background-color: rgb(0, 219, 0);
+    font-size: 18px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+#add:hover{
+    background-color: rgb(0, 173, 0);
+}
+
+.favv {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: white;
+}
+
+.favv:hover {
+    color: rgb(236, 153, 0);
+
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .details {
+        padding: 15px;
+        position: relative;
+    }
+
+    .count button {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+
+    .count input {
+        width: 50px;
+        height: 35px;
+        font-size: 0.9rem;
+    }
+}
